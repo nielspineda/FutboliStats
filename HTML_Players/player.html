@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FutboliStats</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="../images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="../css/akslider.css" rel="stylesheet" type="text/css" />
+    <link href="../css/donate.css" rel="stylesheet" type="text/css" />
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <!--- TO-DO: Want to fix Jquery/Javascripts to dynamically change IDs- Will make it easier to make new pages for new players --->
+   
+</head>
+
+<body class="tm-isblog tt-players-page" style="overflow-x: hidden">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="over-wrap">
+        <div class="toolbar-wrap">
+            <div class="uk-container uk-container-center">
+                <div class="tm-toolbar uk-clearfix uk-hidden-small">
+
+                    <div class="uk-float-right">
+                        <div class="uk-panel">
+                            <div class="social-top"> 
+                                <!--- ADD: Will want to replace all of these with a simple search bar to go through all of our players---> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-menu-box">
+
+            <div style="height: 70px;" class="uk-sticky-placeholder">
+                <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
+                    <div class="uk-container uk-container-center">
+                        <a class="tm-logo uk-float-left" href="index.html">
+                            <img src="../images/logo-img.png" alt="logo" title="logo"> <span>Futboli<em>Stats</em></span>
+                        </a>
+
+                        <ul class="uk-navbar-nav uk-hidden-small">
+                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">Tournaments</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="players.html">2015 NWSL</a>
+                                                </li>
+                                                <li><a href="players.html">2016 NWSL</a>
+                                                </li>
+                                                <li><a href="players.html">2016 Olympics</a>
+                                                </li>
+                                                <li><a href="gallery.html">2016 She Believes Cup</a>
+                                                </li>
+                                                <li><a href="players.html">International Friendlies</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">NWSL Clubs</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="../red/index.html">Boston Breakers</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Chicago Red Stars</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Houston Dash</a>
+                                                </li>
+                                                <li><a href="../red/index.html">FC Kansas City</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Orlando Pride</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Portland Thorns FC</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Seattle Reign FC</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Sky Blue FC</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Washington Spirit</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Western New York Flash</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="news.html">News</a>
+                            </li>
+                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="about.html">About</a></li>
+                            <div class="uk-grid" data-uk-grid-match style="padding-top: 24px;">
+                                <li><input type="text" name="search" placeholder="Search.."></li>
+                            </div> <!--- TO-DO: NEED TO FIX ALIGNMENT --->
+                            
+                        </ul>
+                        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="tm-top-a-box tm-full-width tm-box-bg-1 ">
+            <div class="uk-container uk-container-center">
+                <section id="tm-top-a" class="tm-top-a uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+
+                    <div class="uk-width-1-1 uk-row-first">
+                        <div class="uk-panel">
+                            <!---TO-DO: Potentially change this background-image---> 
+                            <div class="uk-cover-background uk-position-relative head-wrap" style="height: 290px; background-image: url('../images/head-bg.jpg');">
+                                <img class="uk-invisible" src="../images/head-bg.jpg" alt="" height="290" width="1920">
+                                <div class="uk-position-cover uk-flex uk-flex-center head-title">
+                                    <h1 ><b class="myPlayerName">Christen Press</b></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="uk-container uk-container-center alt">
+            <ul class="uk-breadcrumb">
+                <li><a href="index.html">NWSL</a>
+                </li>
+                <li><a href="players.html">Chicago Red Stars</a> <!--- TO-DO: Potentially make this dynamic- if CRS-> Chicago Red Stars--->
+                </li>
+                <li  class="uk-active"><span class="myPlayerName">Christen Press</span>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="uk-container uk-container-center">
+            <div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match="" data-uk-grid-margin="">
+                <div class="tm-main uk-width-medium-1-1 uk-row-first">
+                    <main id="tm-content" class="tm-content">
+                        <div id="system-message-container"></div>
+                        <div class="contentpaneopen">
+                            <article class="player-single tt-players-page">
+                                <div class="uk-container uk-container-center alt">
+                                    <div class="uk-gfid">
+                                    </div>
+                                </div>
+                                <div class="player-top">
+                                    <div class="uk-container uk-container-center alt">
+                                        <div class="uk-grid">
+                                            <div class="uk-width-2-10">
+                                                <div class="avatar">
+                                                    <img style= "width:100%" src="http://chicagoredstars.com/assets/2016/01/Untitled-1_0005_ChicagoRedStarsHeadShots-98.jpg">                    
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-12">
+                                                <!--- Have to trace back these classes in html to change them--->
+                                                <div class="number">
+                                                    23                    
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-6-12">
+                                                <div class="name">
+                                                    <h2>
+                                                        <span class="myPlayerName">Christen Press</span>                     
+                                                    </h2>
+                                                </div>
+                                                <div class="wrap">
+                                                    <ul class="info">
+                                                        <li><span>CLUB(S)</span><span>CHICAGO RED STARS, USWNT</span></li>
+                                                        <li><span>POSITION</span><span>FORWARD</span></li>
+                                                        <li><span>BIRTHDATE</span><span>12/09/1988</span></li>
+                                                        <li><span>HOMETOWN</span><span>PALOS VERDES, CA</span></li>
+                                                        <li><span>HEIGHT</span><span>5 ft 7 in</span></li>
+                                                    </ul>
+                                                    <ul class="socials">
+                                                        <li class="twitter">
+                                                            <a href="http://twitter.com/christenpress" target="_blank" rel="nofollow">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-container uk-container-center alt">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-1-1">
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-container uk-container-center alt">
+                                    <div class="uk-grid">
+                                        <div class="uk-width-9-10 uk-push-1-10">
+                                            <div class="player-total-info">
+                                                <!--- Graphs/Stats Charts will be Placed Here--->
+                                                <p><strong>Shooting Statistics</p>
+                                                <p><strong>Passing Statistics</p>
+                                                <p><strong>Possession Statistics</p>
+                                                <p><strong>Player Defending Statistics</p>
+                                                <p><strong>Ball Defending Statistics</p>
+                                                <p><strong>Additional Statistics</p>
+                                                <!-- List Items Have ul>
+                                                    <li>List Item?</li>
+                                                </ul--->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+        <div class="bottom-wrapper">
+            <div class="tm-bottom-f-box  ">
+                <div class="uk-container uk-container-center">
+                    <section id="tm-bottom-f" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+
+                        <div class="uk-width-1-1">
+                            <div class="uk-panel">
+                                <div class="footer-logo">
+                                    <a href="/"><img src="../images/footer-logo-img.png" alt=""><span>FUTBOLI</span>STATS</a>
+                                </div>
+                                <div class="footer-socials">
+                                    <div class="social-top">
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-facebook"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-twitter"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-youtube"></span></a>
+                                        <a href="#"><span class="uk-icon-small uk-icon-hover uk-icon-instagram"></span></a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+
+                                <p class="footer-about-text">
+                                    All statistics from FutboliStats come from WoSo Statistics (<a style="color:#00aced" href="twitter.com/wosostats">@WoSoStats</a>) and their stat trackers.  If you have extra time and would like to contribute, volunteers are always needed for various matches.  
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="tm-bottom-g-box  ">
+                <div class="uk-container uk-container-center">
+                    <section id="tm-bottom-g" class="tm-bottom-f uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
+                        <div class="uk-width-1-1 uk-width-large-1-2">
+                            <div  class="uk-panel">
+                                <div class="acymailing_module" id="acymailing_module_formAcymailing54111">
+                                    <div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing54111">
+                                        <form id="formAcymailing54111" method="post" name="formAcymailing54111">
+                                            <div class="acymailing_module_form">
+                                                <div class="mail-title">Newsletters</div>
+                                                <div class="acymailing_introtext">Subscribe to our Newsletter!</div>
+                                                <div class="clear"></div>
+                                                <div class="space"></div>
+                                                <table class="acymailing_form">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="acyfield_email acy_requiredField">
+                                                                <span class="mail-wrap">
+                                                                    <input id="user_email_formAcymailing54111" onfocus="if(this.value == 'Enter your email') this.value = '';" onblur="if(this.value=='') this.value='Enter your email';" class="inputbox" name="user[email]" style="width:80%" value="Enter your email" title="Enter your email" type="text">
+                                                            </span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td class="acysubbuttons">
+                                                                <span class="submit-wrap">
+                                                                    <span class="submit-wrapper">
+                                                                        <input class="button subbutton btn btn-primary" value="Subscribe" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing54111'); }catch(err){alert('The form could not be submitted '+err);return false;}" type="submit">
+                                                                    </span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer id="tm-footer" class="tm-footer">
+
+
+                <div class="uk-panel">
+                    <div class="uk-container uk-container-center">
+                        <div class="uk-grid">
+                            <div class="uk-width-1-1">
+                                <div class="footer-wrap">
+                                    <div class="foot-menu-wrap">
+                                        <ul class="nav menu">
+                                            <li class="item-165"><a href="about.html">About</a>
+                                            </li>
+                                            <li class="item-166"><a href="players.html">News</a>
+                                            </li>
+                                            <li class="item-167"><a href="match-list.html">Contact</a>
+                                            </li>
+                                            <li class="item-168"><a href="results.html">Privacy and Conditions</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyrights">Copyright © 2016 <a href="/">Messi-Coders</a>. All Rights Reserved.</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas">
+                    <li class="uk-parent"><a href="index.html">Tournaments</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="players.html">2015 NWSL</a>
+                            </li>
+                            <li><a href="players.html">2016 NWSL</a>
+                            </li>
+                            <li><a href="players.html">2016 Olympics</a>
+                            </li>
+                            <li><a href="gallery.html">2016 She Believes Cup</a>
+                            </li>
+                            <li><a href="players.html">International Friendlies</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">NWSL Clubs</a></li>
+                    <li class="uk-parent uk-active"><a href="#">Pages</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../red/index.html">Boston Breakers</a>
+                            </li>
+                            <li><a href="../red/index.html">Chicago Red Stars</a>
+                            </li>
+                            <li><a href="../red/index.html">Houston Dash</a>
+                            </li>
+                            <li><a href="../red/index.html">FC Kansas City</a>
+                            </li>
+                            <li><a href="../red/index.html">Orlando Pride</a>
+                            </li>
+                            <li><a href="../red/index.html">Portland Thorns FC</a>
+                            </li>
+                            <li><a href="../red/index.html">Seattle Reign FC</a>
+                            </li>
+                            <li><a href="../red/index.html">Sky Blue FC</a>
+                            </li>
+                            <li><a href="../red/index.html">Washington Spirit</a>
+                            </li>
+                            <li><a href="../red/index.html">Western New York Flash</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a>
+                    </li>
+                    <li><a href="category.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/uikit.js"></script>
+<script type="text/javascript" src="../js/components/grid.js"></script>
+<script type="text/javascript" src="../js/components/slider.js"></script>
+<script type="text/javascript" src="../js/components/slideshow.js"></script>
+<script type="text/javascript" src="../js/components/slideset.js"></script>
+<script type="text/javascript" src="../js/components/sticky.js"></script>
+<script type="text/javascript" src="../js/components/lightbox.js"></script>
+<script type="text/javascript" src="../js/components/accordion.js"></script>
+<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript" src="../js/theme.js"></script>
+                        
+<script src="../js/jquery.js"></script>
+    <script language="javascript">
+        function fillElement(elementName, newText) {
+            var elements  = document.getElementsByClassName(elementName);
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].innerHTML = newText;
+            }
+        }
+        
+        window.onload = function(e){ 
+            fillElement("myPlayerName", "bob dsfds");
+        }
+    </script>
+
+</body>
+
+</html>
