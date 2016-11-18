@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FutboliStats</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-    <link href="../images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-    <link href="../css/akslider.css" rel="stylesheet" type="text/css" />
-    <link href="../css/donate.css" rel="stylesheet" type="text/css" />
-    <link href="../css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="../../images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="../../css/akslider.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/donate.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/theme.css" rel="stylesheet" type="text/css" />
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <!--- TO-DO: Want to fix Jquery/Javascripts to dynamically change IDs- Will make it easier to make new pages for new players --->
@@ -24,29 +24,13 @@
     </div>
 
     <div class="over-wrap">
-        <div class="toolbar-wrap">
-            <div class="uk-container uk-container-center">
-                <div class="tm-toolbar uk-clearfix uk-hidden-small">
-
-                    <div class="uk-float-right">
-                        <div class="uk-panel">
-                            <div class="social-top"> 
-                                <!--- ADD: Will want to replace all of these with a simple search bar to go through all of our players---> 
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
         <div class="tm-menu-box">
-
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
                     <div class="uk-container uk-container-center">
                         <a class="tm-logo uk-float-left" href="index.html">
-                            <img src="../images/logo-img.png" alt="logo" title="logo"> <span>Futboli<em>Stats</em></span>
+                            <img src="../../images/logo-img.png" alt="logo" title="logo"> <span>Futboli<em >Stats</em></span>
                         </a>
 
                         <ul class="uk-navbar-nav uk-hidden-small">
@@ -102,17 +86,30 @@
                             </li>
                             <li><a href="news.html">News</a>
                             </li>
-                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="about.html">About</a></li>
-                            <div class="uk-grid" data-uk-grid-match style="padding-top: 24px;">
-                                <li><input type="text" name="search" placeholder="Search.."></li>
-                            </div> <!--- TO-DO: NEED TO FIX ALIGNMENT --->
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">About</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="../red/index.html">Mission</a>
+                                                </li>
+                                                <li><a href="../red/index.html">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                  <div class="container-4">
+                                    <input type="search" id="search" placeholder="Search..." />
+                                    <button class="icon"><i class="fa fa-search"></i></button>
+                                  </div>
                             
                         </ul>
                         <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                     </div>
                 </nav>
             </div>
-
         </div>
 
         <div class="tm-top-a-box tm-full-width tm-box-bg-1 ">
@@ -122,8 +119,8 @@
                     <div class="uk-width-1-1 uk-row-first">
                         <div class="uk-panel">
                             <!---TO-DO: Potentially change this background-image---> 
-                            <div class="uk-cover-background uk-position-relative head-wrap" style="height: 290px; background-image: url('../images/head-bg.jpg');">
-                                <img class="uk-invisible" src="../images/head-bg.jpg" alt="" height="290" width="1920">
+                            <div class="uk-cover-background uk-position-relative head-wrap" style="height: 290px; background-image: url('../../images/head-bg.jpg');">
+                                <img class="uk-invisible" src="../../images/head-bg.jpg" alt="" height="290" width="1920">
                                 <div class="uk-position-cover uk-flex uk-flex-center head-title">
                                     <h1 ><b class="myPlayerName">Christen Press</b></h1>
                                 </div>
@@ -231,7 +228,7 @@
                         <div class="uk-width-1-1">
                             <div class="uk-panel">
                                 <div class="footer-logo">
-                                    <a href="/"><img src="../images/footer-logo-img.png" alt=""><span>FUTBOLI</span>STATS</a>
+                                    <a href="/"><img src="../../images/footer-logo-img.png" alt=""><span>FUTBOLI</span>STATS</a>
                                 </div>
                                 <div class="footer-socials">
                                     <div class="social-top">
@@ -381,20 +378,20 @@
 
     
 
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/uikit.js"></script>
-<script type="text/javascript" src="../js/components/grid.js"></script>
-<script type="text/javascript" src="../js/components/slider.js"></script>
-<script type="text/javascript" src="../js/components/slideshow.js"></script>
-<script type="text/javascript" src="../js/components/slideset.js"></script>
-<script type="text/javascript" src="../js/components/sticky.js"></script>
-<script type="text/javascript" src="../js/components/lightbox.js"></script>
-<script type="text/javascript" src="../js/components/accordion.js"></script>
-<script type="text/javascript" src="../js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/uikit.js"></script>
+<script type="text/javascript" src="../../js/components/grid.js"></script>
+<script type="text/javascript" src="../../js/components/slider.js"></script>
+<script type="text/javascript" src="../../js/components/slideshow.js"></script>
+<script type="text/javascript" src="../../js/components/slideset.js"></script>
+<script type="text/javascript" src="../../js/components/sticky.js"></script>
+<script type="text/javascript" src="../../js/components/lightbox.js"></script>
+<script type="text/javascript" src="../../js/components/accordion.js"></script>
+<script type="text/javascript" src="../../js/isotope.pkgd.min.js"></script>
 
-<script type="text/javascript" src="../js/theme.js"></script>
+<script type="text/javascript" src="../../js/theme.js"></script>
                         
-<script src="../js/jquery.js"></script>
+<script src="../../js/jquery.js"></script>
     <script language="javascript">
         function fillElement(elementName, newText) {
             var elements  = document.getElementsByClassName(elementName);
