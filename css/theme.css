@@ -10696,7 +10696,7 @@ q {
   box-sizing: border-box;
   max-width: 820px;
   width: 100%;
-  float: right;
+  float: left;
   position: relative;
   z-index: 2;
 }

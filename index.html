@@ -3,21 +3,20 @@
 
 <head>
 
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sport.AK</title>
+    <title>FutboliStats</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-    <link href="../../images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-    <link href="../../css/akslider.css" rel="stylesheet" type="text/css" />
-    <link href="../../css/donate.css" rel="stylesheet" type="text/css" />
-    <link href="../../css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="css/akslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/donate.css" rel="stylesheet" type="text/css" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+   
 </head>
-
 <body class="tm-isblog">
 
     <div class="preloader">
@@ -26,17 +25,33 @@
 
 
     <div class="over-wrap">
+        <div class="toolbar-wrap">
+            <div class="uk-container uk-container-center">
+                <div class="tm-toolbar uk-clearfix uk-hidden-small">
+
+                    <div class="uk-float-right">
+                        <div class="uk-panel">
+                            <div class="social-top"> 
+                                <!--- ADD: Will want to replace all of these with a simple search bar to go through all of our players---> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="tm-menu-box">
+
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
                     <div class="uk-container uk-container-center">
-                        <a class="tm-logo uk-float-left" href="../General/index.html">
-                            <img src="../../images/logo-img.png" alt="logo" title="logo"> <span>Futboli<em >Stats</em></span>
+                        <a class="tm-logo uk-float-left" href="index.html">
+                            <img src="images/logo-img.png" alt="logo" title="logo"> <span>Futboli<em >Stats</em></span>
                         </a>
 
                         <ul class="uk-navbar-nav uk-hidden-small">
-                            <li class="uk-parent uk-active" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#">Tournaments</a>
+                            <li data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#" style="font-weight:bold">Tournaments</a>
                                 <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
                                     <div class="uk-grid uk-dropdown-grid">
                                         <div class="uk-width-1-1">
@@ -56,12 +71,12 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">NWSL Clubs</a>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#" style="font-weight:bold">NWSL Clubs</a>
                                 <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
                                     <div class="uk-grid uk-dropdown-grid">
                                         <div class="uk-width-1-1">
                                             <ul class="uk-nav uk-nav-navbar">
-                                                <li><a href="../Teams/team-single.html">Boston Breakers</a>
+                                                <li><a href="../red/index.html">Boston Breakers</a>
                                                 </li>
                                                 <li><a href="../red/index.html">Chicago Red Stars</a>
                                                 </li>
@@ -86,14 +101,24 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="news.html">News</a>
-                            </li>
-                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="index.html">About</a>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#" style="font-weight:bold">News</a>
                                 <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
                                     <div class="uk-grid uk-dropdown-grid">
                                         <div class="uk-width-1-1">
                                             <ul class="uk-nav uk-nav-navbar">
-                                                <li><a href="../red/index.html">Mission</a>
+                                                <li><a href="../red/index.html">Women's Soccer News</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-parent" data-uk-dropdown="{'preventflip':'y'}" aria-haspopup="true" aria-expanded="false"><a href="#" style="font-weight:bold">About</a>
+                                <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-width-1">
+                                    <div class="uk-grid uk-dropdown-grid">
+                                        <div class="uk-width-1-1">
+                                            <ul class="uk-nav uk-nav-navbar">
+                                                <li><a href="../red/index.html">About</a>
                                                 </li>
                                                 <li><a href="../red/index.html">Contact</a>
                                                 </li>
@@ -112,67 +137,65 @@
                     </div>
                 </nav>
             </div>
+
         </div>
 
-       <div class="tm-top-a-box tm-full-width tm-box-bg-1 ">
+        <div class="tm-top-a-box tm-full-width " style="padding-bottom: 30px">
             <div class="uk-container uk-container-center">
                 <section id="tm-top-a" class="tm-top-a uk-grid uk-grid-collapse" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
-                    <div class="uk-width-1-1 uk-row-first">
+
+                    <div class="uk-width-1-1">
                         <div class="uk-panel">
-                            <div class="uk-cover-background uk-position-relative head-match-wrap" style="height: 590px; background-image: url('../../images/head-bg-match.jpg');">
-                                <img class="uk-invisible" src="../../images/head-bg-match.jpg" alt="">
-                                <div class="uk-position-cover uk-flex-center head-news-title">
-                                    <h1>
-                                        Results Match:
-                                    </h1>
-                                    <div class="clear"></div>
-                                    <div class="va-latest-wrap">
-                                        <div class="uk-container uk-container-center">
-                                            <div class="va-latest-top">
-                                                <h3>Latest <span>Results</span></h3>
-                                                <div class="tournament">
-                                                    <address>
-                                                        Cambridgeshire UK               <br><br>
-                                                    </address>
-                                                </div>
-                                                <div class="date">
-                                                    November 29, 2015 | 12:00 am            
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="va-latest-middle uk-flex uk-flex-middle">
-                                            <div class="uk-container uk-container-center">
-                                                <div class="uk-grid uk-flex uk-flex-middle">
-                                                    <div class="uk-width-2-12 center">
-                                                        <a href="match-single.html">
-                                                        <img src="images/team-ava.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)"></a>                                    
-                                                    </div>
-                                                    <div class="uk-width-3-12 name uk-vertical-align">
-                                                        <div class="wrap uk-vertical-align-middle">
-                                                            Cambridgehire                    
-                                                        </div>
-                                                    </div>
-                                                    <div class="uk-width-2-12 score">
-                                                        <div class="title">score</div>
-                                                        <div class="table">
-                                                            <div class="left">3</div>
-                                                            <div class="right">5</div>
-                                                            <div class="uk-clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="uk-width-3-12 name alt uk-vertical-align">
-                                                        <div class="wrap uk-vertical-align-middle">
-                                                            china                    
-                                                        </div>
-                                                    </div>
-                                                    <div class="uk-width-2-12 center">
-                                                        <a href="match-single.html">
-                                                        <img src="images/team-ava1.png" class="img-polaroid" alt="Cambridgehire VS china (2015-11-29)" title="Cambridgehire VS china (2015-11-29)"></a>                                    
+                            <div class="akslider-module ">
+                                <div class="uk-slidenav-position" data-uk-slideshow="{height: 'auto', animation: 'swipe', duration: '500', autoplay: false, autoplayInterval: '7000', videoautoplay: true, videomute: true, kenburns: false}">
+                                    <ul class="uk-slideshow uk-overlay-active">
+                                        <li aria-hidden="false" class="uk-height-viewport uk-active">
+                                            <div style="background-image: url(images/main-slider-img.jpg);" class="uk-cover-background uk-position-cover"></div><img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="images/main-slider-img.jpg" alt="">
+                                            <div class="uk-position-cover uk-flex-middle">
+                                                <div class="uk-container uk-container-center uk-position-cover">
+                                                    <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                        <h3>Welcome to Futboli<span>Stats</span></h3>
+                                                        <div class="promo-sub">The website dedicated to <span>advanced statistics</span> in women's soccer.</div>
+                                                        <!---a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a--->
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                        <li aria-hidden="true" class="uk-height-viewport">
+                                            <div style="background-image: url(images/main-slider-img1.jpg;);" class="uk-cover-background uk-position-cover"></div><img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="images/main-slider-img1.jpg" alt="">
+                                            <div class="uk-position-cover uk-flex-middle">
+                                                <div class="uk-container uk-container-center uk-position-cover">
+                                                    <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                        <h3><span>Statistics</span> reign supreme</h3>
+                                                        <div class="promo-sub"><span>Numbers</span> are a necessity in the modern day sports world.</div>
+                                                        <!---a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a--->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li aria-hidden="true" class="uk-height-viewport">
+                                            <div style="background-image: url(images/main-slider-img2.jpg;);" class="uk-cover-background uk-position-cover"></div><img style="width: 100%; height: auto; opacity: 0;" class="uk-invisible" src="images/main-slider-img2.jpg" alt="">
+                                            <div class="uk-position-cover uk-flex-middle">
+                                                <div class="uk-container uk-container-center uk-position-cover">
+                                                    <div class="va-promo-text uk-width-6-10 uk-push-4-10">
+                                                        <h3><span>Data</span> drives conversation</h3>
+                                                        <div class="promo-sub"><span>Data</span> is a storyteller of players and their journeys.</div>
+                                                        <!---a href="#" class="read-more">Read More<i class="uk-icon-chevron-right"></i></a--->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                                    <a href="/" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                                    <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-text-center">
+                                        <li class="uk-active" data-uk-slideshow-item="0"><a href="/">0</a>
+                                        </li>
+                                        <li data-uk-slideshow-item="1"><a href="/">1</a>
+                                        </li>
+                                        <li data-uk-slideshow-item="2"><a href="/">2</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -180,14 +203,6 @@
                 </section>
             </div>
         </div>
-
-        <div class="uk-container uk-container-center alt">
-            <ul class="uk-breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li class="uk-active"><span>Match list</span></li>
-            </ul>
-        </div>
-
 
         <div class="bottom-wrapper">
             <div class="tm-bottom-f-box  ">
@@ -197,7 +212,7 @@
                         <div class="uk-width-1-1">
                             <div class="uk-panel">
                                 <div class="footer-logo">
-                                    <a href="/"><img src="../../images/footer-logo-img.png" alt=""><span>FUTBOLI</span>STATS</a>
+                                    <a href="/"><img src="../images/footer-logo-img.png" alt=""><span>FUTBOLI</span>STATS</a>
                                 </div>
                                 <div class="footer-socials">
                                     <div class="social-top">
@@ -342,51 +357,23 @@
                 </ul>
             </div>
         </div>
+    
     </div>
 
     
 
-<script type="text/javascript" src="../../js/jquery.js"></script>
-<script type="text/javascript" src="../../js/uikit.js"></script>
-<script type="text/javascript" src="../../js/SimpleCounter.js"></script>
-<script type="text/javascript" src="../../js/components/grid.js"></script>
-<script type="text/javascript" src="../../js/components/slider.js"></script>
-<script type="text/javascript" src="../../js/components/slideshow.js"></script>
-<script type="text/javascript" src="../../js/components/slideset.js"></script>
-<script type="text/javascript" src="../../js/components/sticky.js"></script>
-<script type="text/javascript" src="../../js/components/lightbox.js"></script>
-<script type="text/javascript" src="../../js/components/accordion.js"></script>
-<script type="text/javascript" src="../../js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/uikit.js"></script>
+<script type="text/javascript" src="js/SimpleCounter.js"></script>
+<script type="text/javascript" src="js/components/grid.js"></script>
+<script type="text/javascript" src="js/components/slider.js"></script>
+<script type="text/javascript" src="js/components/slideshow.js"></script>
+<script type="text/javascript" src="js/components/slideset.js"></script>
+<script type="text/javascript" src="js/components/sticky.js"></script>
+<script type="text/javascript" src="js/components/lightbox.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 
-<script type="text/javascript" src="../../js/theme.js"></script>
-<script type="text/javascript">
-    new SimpleCounter("countdown4", 1447448400, {
-      'continue': 0,
-      format: '{D} {H} {M} {S}',
-      lang: {
-          d: {
-              single: 'day',
-              plural: 'days'
-          }, //days
-          h: {
-              single: 'hr',
-              plural: 'hrs'
-          }, //hours
-          m: {
-              single: 'min',
-              plural: 'min'
-          }, //minutes
-          s: {
-              single: 'sec',
-              plural: 'sec'
-          } //seconds
-      },
-      formats: {
-          full: "<span class='countdown_number' style='color:  '>{number} </span> <span class='countdown_word' style='color:  '>{word}</span> <span class='countdown_separator'>:</span>", //Format for full units representation
-          shrt: "<span class='countdown_number' style='color:  '>{number} </span>" //Format for short unit representation
-      }
-  });
-</script>
+<script type="text/javascript" src="js/theme.js"></script>
 
 </body>
 
